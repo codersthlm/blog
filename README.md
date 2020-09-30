@@ -28,6 +28,14 @@ test.bat
 
 
 Start Angular. From commandline (under blog/client/blog) run: 
+
+```
+npm install
+
+```
+
+And after that
+
 ```
 ng serve
 
