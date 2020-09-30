@@ -1,4 +1,3 @@
-import { NULL_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BlogServiceService } from '../blog-service.service';
@@ -12,8 +11,8 @@ import { Router } from '@angular/router';
 
 export class EntryDetailComponent implements OnInit {
   id = null;
-  entry = {title:'', content:'', description:'', author:'', createdAt:''};
-
+  entry = { title: '', content: '', description: '', author: '', createdAt: '' };
+  
   constructor(private activatedRoute: ActivatedRoute, private blogService: BlogServiceService, private router: Router) {
   }
 
@@ -24,9 +23,11 @@ export class EntryDetailComponent implements OnInit {
   }
 
   deleteEntry() {
-    this.blogService.deleteBlogEntry(this.id).then(entry => {
-      this.router.navigate(['/blog-list']);
-    });
+    if (window.confirm("Are you sure you want to delete this blog entry?")) {
+      this.blogService.deleteBlogEntry(this.id).then(entry => {
+        this.router.navigate(['/blog-list']);
+      });
+    }
   }
 
   ngOnInit(): void {

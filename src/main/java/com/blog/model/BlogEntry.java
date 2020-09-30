@@ -5,6 +5,8 @@ import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Transient;
+import javax.persistence.Column;
+import javax.persistence.Lob;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -31,8 +33,13 @@ public class BlogEntry {
   
 
     private String title;
+
+    @Column(columnDefinition = "TEXT")
     private String description;
+    
+    @Lob
     private String content;
+    
     private String imageUrl;
     
     @Transient

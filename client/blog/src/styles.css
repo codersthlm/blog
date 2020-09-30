@@ -17,10 +17,16 @@
     width:64px;
 }
 
-.posted-by {
+.media-body .posted-by {
     margin-top: 10px;
     font-size: x-small;
 }
+
+.post-heading > .posted-by {
+    margin-top: 10px;
+    color:grey;
+}
+
 
 .author {
     font-weight: bold;
@@ -37,3 +43,13 @@ textarea.form-control.content {
 submit {
     width:10%
 }
+
+
+div.content {
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.delete-entry {
+    width:100%;
+} 
