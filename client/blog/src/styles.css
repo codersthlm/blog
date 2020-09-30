@@ -3,15 +3,12 @@
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-
 .container {
     margin-top:200px;
 }
-
 .media {
     margin-top: 100px;
 }
-
 .mr-3 {
     height:64px;
     width:64px;
@@ -26,7 +23,6 @@
     margin-top: 10px;
     color:grey;
 }
-
 
 .author {
     font-weight: bold;
@@ -47,7 +43,7 @@ submit {
 
 div.content {
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 
 .delete-entry {

@@ -1,6 +1,6 @@
 {
     "title":"Why use Angular?",
     "description":"We look at using Angular. What are the pros and cons?",
-    "content":"Angualr is a javascript framework ...",
+    "content":"Build features quickly with simple, declarative templates. Extend the template language with your own components and use a wide array of existing components. Get immediate Angular-specific help and feedback with nearly every IDE and editor. All this comes together so you can focus on building amazing apps rather than trying to make the code work.",
     "imageUrl":"https://miro.medium.com/max/250/1*nWtdFBcmwNz0cRB8YidO0w.png"
 }

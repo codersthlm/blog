@@ -15,14 +15,14 @@ git clone https://github.com/codersthlm/blog.git
 
 Start springboot. From commandline run  (under blog):
 ```
-./gradlew bootRun
+gradlew bootRun
 ```
  Check that it is up and running at http://localhost:8080/actuator/health
 
 
 Insert some test data. From commandline run  (under blog):
 ```
-./test.bat
+test.bat
 ```  
   (If you don't use windows or you dont want to run bat files, you can copy the commands from the bat file) 
 
