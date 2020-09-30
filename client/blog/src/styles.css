@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.container {
+    margin-top:200px;
+}
+
+.media {
+    margin-top: 100px;
+}
+
+.mr-3 {
+    height:64px;
+    width:64px;
+}
+
+.posted-by {
+    margin-top: 10px;
+    font-size: x-small;
+}
+
+.author {
+    font-weight: bold;
+}
+
+textarea.form-control  {
+    height: 70px;
+}
+
+textarea.form-control.content {
+    height: 200px;
+}
+
+submit {
+    width:10%
+}

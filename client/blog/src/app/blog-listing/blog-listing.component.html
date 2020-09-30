@@ -1,0 +1,14 @@
+<div class="container">
+<ul class="list-unstyled">
+  <li class="media" *ngFor="let entry of entries">
+    <img class="mr-3" src = {{entry.imageUrl}} alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><a href="entry-detail/{{entry.id}}">{{ entry.title }}</a></h5>
+      {{ entry.description }}
+      <p class="posted-by">Posted by <span class="author">{{ entry.author }}</span>
+          on {{entry.createdAt | date}} at {{ entry.createdAt| date:'shortTime' }}
+      </p>
+    </div>
+  </li>
+</ul>
+<div>

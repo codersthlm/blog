@@ -1,0 +1,46 @@
+<div class="container">
+<form #entryForm = "ngForm"  (ngSubmit)="onSubmit(entryForm)">
+    <div class="form-group">
+      <label>Title:</label>
+   
+   
+      <input type="text" name="title" class="form-control"   [(ngModel)]="model.title" #title="ngModel" 
+      [ngClass]="{ 'is-invalid': entryForm.submitted && title.invalid }" required>
+    <div class="invalid-feedback" *ngIf="entryForm.submitted && title.invalid">
+      <p *ngIf="title.errors.required">Title is required</p>
+    </div>
+    </div>
+  
+    <div class="form-group">
+      <label>Image Url (Something like https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/240px-Typescript_logo_2020.svg.png):</label>
+      <input type="text"  name="imageUrl" class="form-control"   [(ngModel)]="model.imageUrl" #imageUrl="ngModel" 
+      [ngClass]="{ 'is-invalid': entryForm.submitted && imageUrl.invalid }" required>
+      <div class="invalid-feedback" *ngIf="entryForm.submitted && imageUrl.invalid">
+        <p *ngIf="imageUrl.errors.required">Image Url is required</p>
+      </div>
+   
+    </div>
+  
+    <div class="form-group">
+      <label>Description:</label>
+      <textarea name="description" class="form-control" [(ngModel)]="model.description" #description="ngModel" 
+      [ngClass]="{ 'is-invalid': entryForm.submitted && description.invalid }" required></textarea>
+      <div class="invalid-feedback" *ngIf="entryForm.submitted && description.invalid">
+        <p *ngIf="description.errors.required">Description is required</p>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label>Content:</label>
+      <textarea name="content" class="form-control content" [(ngModel)]="model.content" #content="ngModel" 
+      [ngClass]="{ 'is-invalid': entryForm.submitted && content.invalid }" required></textarea>
+      <div class="invalid-feedback" *ngIf="entryForm.submitted && content.invalid">
+        <p *ngIf="content.errors.required">Content is required</p>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary"> Submit </button>
+    </div>
+  </form>
+</div>
